@@ -1,144 +1,167 @@
-/* ===== RESET & BASE STYLES ===== */
+/* ===== Navigation Bar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(30, 144, 255, 0.9);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd1c1;
+}
+
+/* ===== General Styles ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f2f7fc;
-    color: #1f2d3d;
+    padding-top: 70px;
+    background: linear-gradient(to bottom, #87CEEB, #00BFFF);
+    color: #333;
     line-height: 1.6;
 }
 
-/* ===== NAV BAR ===== */
-nav {
-    background-color: #0f3d6b;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    color: #dbe9f6;
+a {
     text-decoration: none;
-    font-size: 16px;
+    color: inherit;
 }
 
-nav a:hover {
-    color: #ffffff;
+/* ===== Container ===== */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== Hero Section ===== */
 .hero {
-    position: relative;
-    height: 300px;
-    background: linear-gradient(to bottom, #6faee8, #cfe6fb);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 80vh;
     text-align: center;
-    overflow: hidden;
+    color: #fff;
 }
 
-.hero-text {
-    z-index: 2;
-}
-
-.hero h2 {
-    font-size: 36px;
-    color: #0f3d6b;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .hero p {
-    font-size: 18px;
-    color: #1f4f82;
-    margin-top: 10px;
-}
-
-/* ===== CLOUDS (国风 style) ===== */
-.cloud {
-    position: absolute;
-    background: white;
-    border-radius: 50%;
-    opacity: 0.9;
-}
-
-.cloud.one {
-    width: 140px;
-    height: 50px;
-    top: 60px;
-    left: 10%;
-}
-
-.cloud.two {
-    width: 180px;
-    height: 60px;
-    top: 120px;
-    right: 15%;
-}
-
-.cloud.three {
-    width: 120px;
-    height: 45px;
-    top: 180px;
-    left: 30%;
-}
-
-/* ===== SECTIONS ===== */
-section {
-    padding: 60px 80px;
-}
-
-section h3 {
-    font-size: 26px;
-    color: #0f3d6b;
-    margin-bottom: 20px;
-}
-
-/* ===== BIO ===== */
-.bio p {
-    max-width: 700px;
-    font-size: 17px;
-}
-
-/* ===== SKILLS ===== */
-.skills ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    font-size: 1.2rem;
     max-width: 600px;
 }
 
-.skills li {
-    background-color: #e3f0fb;
-    padding: 12px;
-    border-radius: 8px;
+/* ===== Bio Section ===== */
+.bio {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
     text-align: center;
-    font-size: 16px;
-    color: #0f3d6b;
 }
 
-/* ===== FOOTER ===== */
+.bio h2 {
+    color: #2A4D69;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    color: #2A4D69;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ===== Skills Section ===== */
+.skills {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.skills h2 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list span {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #2A4D69;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== Footer ===== */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #0f3d6b;
-    color: #dbe9f6;
-    font-size: 14px;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
