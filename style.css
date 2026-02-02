@@ -1,1 +1,144 @@
-/* Add you CSS here */
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f7fc;
+    color: #1f2d3d;
+    line-height: 1.6;
+}
+
+/* ===== NAV BAR ===== */
+nav {
+    background-color: #0f3d6b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #dbe9f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(to bottom, #6faee8, #cfe6fb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-text {
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #0f3d6b;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #1f4f82;
+    margin-top: 10px;
+}
+
+/* ===== CLOUDS (国风 style) ===== */
+.cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.cloud.one {
+    width: 140px;
+    height: 50px;
+    top: 60px;
+    left: 10%;
+}
+
+.cloud.two {
+    width: 180px;
+    height: 60px;
+    top: 120px;
+    right: 15%;
+}
+
+.cloud.three {
+    width: 120px;
+    height: 45px;
+    top: 180px;
+    left: 30%;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 80px;
+}
+
+section h3 {
+    font-size: 26px;
+    color: #0f3d6b;
+    margin-bottom: 20px;
+}
+
+/* ===== BIO ===== */
+.bio p {
+    max-width: 700px;
+    font-size: 17px;
+}
+
+/* ===== SKILLS ===== */
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 600px;
+}
+
+.skills li {
+    background-color: #e3f0fb;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #0f3d6b;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f3d6b;
+    color: #dbe9f6;
+    font-size: 14px;
+}
