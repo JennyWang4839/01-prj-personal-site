@@ -2,62 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAV BAR -->
-    <nav>
-        <h1>My Portfolio</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Bio</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">Jenny Wang</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-        <div class="hero-text">
-            <h2>Hello, I'm Jenny</h2>
-            <p>Web Development Student · Building One Project at a Time</p>
-        </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Hi, I'm Jenny Wang</h1>
+        <p>Welcome to my personal portfolio! I'm a web development student passionate about creating beautiful and functional websites.</p>
+    </section>
 
-        <!-- Clouds -->
-        <div class="cloud one"></div>
-        <div class="cloud two"></div>
-        <div class="cloud three"></div>
-    </div>
-
-    <!-- BIO SECTION -->
-    <section class="bio">
-        <h3>About Me</h3>
+    <!-- Bio Section -->
+    <section id="bio" class="bio container">
+        <h2>About Me</h2>
         <p>
-            I am a college student learning web development and building projects
-            to improve my skills. This website is my personal space to showcase
-            what I create as I learn HTML, CSS, and more.
+            I'm currently studying web development and building my skills in HTML, CSS, and JavaScript. I love turning ideas into interactive web experiences and learning new technologies to create modern, user-friendly designs.
         </p>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript (Learning)</li>
-            <li>Git & GitHub</li>
-            <li>Responsive Design</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="skills container">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Git</span>
+            <span>Responsive Design</span>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        © 2026 My Portfolio
+        &copy; 2026 Jenny Wang
     </footer>
 
 </body>
