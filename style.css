@@ -78,9 +78,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
     text-align: center;
     color: #fff;
+    height: 60vh;
 }
 
 .hero h1 {
